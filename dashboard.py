@@ -21,4 +21,4 @@ def dashboard_data(request: Request, db: Session = Depends(get_db)):
 @router.get("/logout")
 async def logout(request: Request):
     request.session.clear()
-    return RedirectResponse(url="/home")
+    return RedirectResponse(url="/")
