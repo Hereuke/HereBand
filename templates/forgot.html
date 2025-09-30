@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="/static/css/forgot.css">
+</head>
+<body>
+    <img src="/assest/Logo.png" alt="Logo" class="top-right-logo">
+    <div class="forgot-container">
+        <h2>Forgot Password</h2>
+        <form id="forgotForm" autocomplete="off">
+            <label for="email">Enter your email</label>
+            <input type="email" name="email" placeholder="abc@gmail.com" required>
+            <button type="submit">Send OTP</button>
+        </form>
+        <div id="forgot-error" class="error-message"></div>
+    </div>
+    <script src="/static/js/forgot.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #222 0%, #444 100%);
+    min-height: 100vh;
+    margin: 0;
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img.top-right-logo {
+    position: absolute;
+    top: 24px;
+    left: 32px;
+    height: 55px;
+    width: 55px;
+    border-radius: 12px;
+    z-index: 10;
+}
+.forgot-container {
+    width: 360px;
+    margin: 80px auto;
+    padding: 2.5rem 2rem;
+    background: #3c3c3c;
+    border-radius: 14px;
+    box-shadow: 0 6px 32px rgba(0, 0, 0, 255);
+    color: #f5f5f5;
+    transition: box-shadow 0.2s;
+    box-sizing: border-box;
+}
+.forgot-container:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 200);
+}
+.forgot-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.forgot-container label {
+    display: block;
+    margin-bottom: 0.4rem;
+    margin-top: 1rem;
+    color: #f4f4f4;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.forgot-container input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #181818;
+    font-size: 1rem;
+    color: #fff;
+}
+.forgot-container button {
+    width: 100%;
+    padding: 10px 0;
+    background: #00bfff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.2s;
+}
+.forgot-container button:hover {
+    background: #0080ff;
+}
+.error-message {
+    color: #ff4d4f;
+    text-align: center;
+    margin-top: 1rem;
+}

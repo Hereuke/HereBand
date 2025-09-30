@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+    <header>
+        <img src="/assest/Logo.png" alt="Logo" class="top-right-logo">
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="slide-menu" id="slide-menu">
+            <ul>
+                <li><a href="/user_profile" id="profileBtn">Profile</a></li>
+                <li><a href="/project" id="projectBtn">Project</a></li>
+                <li><a href="/logout" id="logoutBtn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="welcome-section">
+            <h1>Welcome to your Dashboard 🎉</h1>
+            <p>Here’s an overview of your account and activities.</p>
+        </section>
+
+        <section class="stats-section">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>...</p>
+            </div>
+            <div class="card">
+                <h3>Total Project</h3>
+                <p>...</p>
+            </div>
+            <div class="card">
+                <h3>...</h>
+            </div>
+            <div class="card">
+                <h3>...</h3>
+            </div>
+        </section>
+
+        <section class="quick-actions">
+            </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; 2025 HereBand. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

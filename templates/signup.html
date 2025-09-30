@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/static/css/signup.css">
+</head>
+<body> 
+    <div class="signup-container">
+        <img src="/assest/Logo.png" alt="Logo" class="top-right-logo">
+        <h2>Create Account</h2>
+    <form id="signupForm" autocomplete="off">
+            <label for="username">Username</label>
+            <input type="text" name="name" placeholder="Name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="abc@gmail.com" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Must 8 Characters long" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div id="signup-error" class="error-message"></div>
+        <div class="login-row">
+            <span>Already have an account?</span>
+            <a class="login-link" href="/login">Login</a>
+        </div>
+    </div>
+    <script src="/static/js/signup.js"></script>
+</body>
+</html>

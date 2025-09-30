@@ -1,0 +1,53 @@
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(34, 34, 34, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loading-bars-container {
+    --uib-size: 35px;
+    --uib-color: #fff;
+    --uib-speed: 1s;
+    --uib-stroke: 3.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--uib-size);
+    height: calc(var(--uib-size) * 0.9);
+}
+
+.loading-bar {
+    width: var(--uib-stroke);
+    height: 100%;
+    background-color: var(--uib-color);
+    transition: background-color 0.3s ease;
+}
+
+.loading-bar:nth-child(1) {
+    animation: grow var(--uib-speed) ease-in-out calc(var(--uib-speed) * -0.45) infinite;
+}
+.loading-bar:nth-child(2) {
+    animation: grow var(--uib-speed) ease-in-out calc(var(--uib-speed) * -0.3) infinite;
+}
+.loading-bar:nth-child(3) {
+    animation: grow var(--uib-speed) ease-in-out calc(var(--uib-speed) * -0.15) infinite;
+}
+.loading-bar:nth-child(4) {
+    animation: grow var(--uib-speed) ease-in-out infinite;
+}
+
+@keyframes grow {
+    0%, 100% {
+        transform: scaleY(0.3);
+    }
+    50% {
+        transform: scaleY(1);
+    }
+}
