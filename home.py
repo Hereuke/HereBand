@@ -5,6 +5,6 @@ from fastapi.templating import Jinja2Templates
 router = APIRouter()
 template = Jinja2Templates(directory="templates")
 
-@router.get("/home")
+@router.get("/")
 async def home_get(request: Request):
     return template.TemplateResponse("index.html", {"request": request})
